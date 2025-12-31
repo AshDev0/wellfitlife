@@ -1,0 +1,25 @@
+# WellFitLife - Robots.txt
+# Updated: 2025-12-31
+
+# Allow all search engines to crawl the entire site
+User-agent: *
+Allow: /
+
+# Disallow crawling of development/build artifacts
+Disallow: /dist/
+Disallow: /node_modules/
+Disallow: /.git/
+
+# Sitemap location
+Sitemap: https://wellfitlife.in/sitemap.xml
+
+# Crawl-delay (optional - good for preventing server overload)
+# Uncomment if needed
+# Crawl-delay: 1
+
+# Block specific bots (optional - uncomment if needed)
+# User-agent: AhrefsBot
+# Disallow: /
+
+# User-agent: SemrushBot
+# Disallow: /
