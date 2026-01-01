@@ -14,6 +14,8 @@
 import { useParams, Navigate, useNavigate, Link } from "react-router-dom";
 import BlogCard from "../components/blog/BlogCard";
 import SocialShare from "../components/SocialShare";
+import ReadingProgressBar from "../components/common/ReadingProgressBar";
+import BackToTop from "../components/common/BackToTop";
 import { useBlogPost, useRelatedPosts } from "../hooks/useBlog";
 
 export default function BlogPost() {
@@ -41,6 +43,11 @@ export default function BlogPost() {
 
   return (
     <div className="bg-white text-[#1E293B]">
+      {/* Reading Progress Bar */}
+      <ReadingProgressBar />
+
+      {/* Back to Top Button */}
+      <BackToTop />
 
       {/* ================= BREADCRUMBS ================ */}
       <div className="bg-gray-50 border-b border-gray-200">

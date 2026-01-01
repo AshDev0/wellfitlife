@@ -15,6 +15,7 @@
 import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import BlogCard from "../components/blog/BlogCard";
+import BackToTop from "../components/common/BackToTop";
 import { useBlogPosts } from "../hooks/useBlog";
 import { getAllCategories } from "../data/posts";
 
@@ -102,6 +103,8 @@ export default function Blog() {
 
   return (
     <div className="bg-white text-[#1E293B]">
+      {/* Back to Top Button */}
+      <BackToTop />
 
       {/* ================= PAGE HEADER ================= */}
       <section className="relative text-center pt-28 pb-20 overflow-hidden">
