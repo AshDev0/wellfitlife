@@ -131,7 +131,7 @@ export default function NewsletterPopup() {
               {errorMessage || "You're In!"}
             </h3>
             <p className="text-gray-600">
-              {errorMessage ? 'Great to have you with us!' : 'Check your email for your FREE meal plan and weekly fitness tips!'}
+              {errorMessage ? 'Great to have you with us!' : 'Success! Check your inbox (and spam folder) for a welcome email.'}
             </p>
           </div>
         ) : (

@@ -79,7 +79,7 @@ export default function InlineBlogSubscribe() {
               {errorMessage || "Welcome to WellFitLife!"}
             </h3>
             <p className="text-gray-600">
-              {errorMessage || "Check your email for your FREE meal plan!"}
+              {errorMessage || "Check your inbox for a welcome email!"}
             </p>
           </div>
         ) : (
