@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-Day Indian Fat Loss Meal Plan - WellFitLife</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Poppins', sans-serif;
+            line-height: 1.7;
+            color: #1E293B;
+            background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 40px auto;
+            background: white;
+            box-shadow: 0 20px 60px rgba(16, 185, 129, 0.15);
+            border-radius: 24px;
+            overflow: hidden;
+        }
+
+        /* Cover Page */
+        .cover {
+            background: linear-gradient(135deg, #059669 0%, #10b981 50%, #14b8a6 100%);
+            color: white;
+            padding: 60px 50px 80px;
+            text-align: center;
+            min-height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cover::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .cover::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -15%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .logo {
+            width: 120px;
+            height: auto;
+            margin: 0 auto 30px;
+            filter: brightness(0) invert(1);
+            position: relative;
+            z-index: 1;
+        }
+
+        .cover h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 56px;
+            font-weight: 900;
+            margin-bottom: 25px;
+            line-height: 1.1;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            position: relative;
+            z-index: 1;
+            letter-spacing: -1px;
+        }
+
+        .cover p {
+            font-size: 22px;
+            opacity: 0.98;
+            margin-bottom: 12px;
+            position: relative;
+            z-index: 1;
+            font-weight: 500;
+        }
+
+        .cover .subtitle {
+            font-size: 17px;
+            opacity: 0.85;
+            margin-top: 30px;
+            position: relative;
+            z-index: 1;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px 20px;
+            border-radius: 50px;
+            margin: 5px;
+            font-size: 14px;
+            font-weight: 600;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        /* Content Pages */
+        .page {
+            padding: 50px 40px;
+            page-break-after: always;
+        }
+
+        .page:last-child {
+            page-break-after: auto;
+        }
+
+        h2 {
+            color: #10b981;
+            font-size: 32px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #10b981;
+        }
+
+        h3 {
+            color: #1E293B;
+            font-size: 24px;
+            margin: 30px 0 15px;
+        }
+
+        h4 {
+            color: #10b981;
+            font-size: 18px;
+            margin: 20px 0 10px;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 15px;
+        }
+
+        ul, ol {
+            margin-left: 25px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+
+        .meal-card {
+            background: linear-gradient(to right, #ecfdf5, #f0fdfa);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border-left: 4px solid #10b981;
+        }
+
+        .meal-card h4 {
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .meal-items {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .meal-items li {
+            margin-bottom: 5px;
+        }
+
+        .calories {
+            background: #10b981;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .day-header {
+            background: linear-gradient(135deg, #10b981, #14b8a6);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+        }
+
+        .day-header h3 {
+            color: white;
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .macro-summary {
+            background: #f3f4f6;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .macro-item {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .macro-item strong {
+            display: block;
+            color: #10b981;
+            font-size: 20px;
+        }
+
+        .tip-box {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .tip-box strong {
+            color: #f59e0b;
+        }
+
+        .footer {
+            background: #1E293B;
+            color: white;
+            padding: 30px 40px;
+            text-align: center;
+        }
+
+        .footer h3 {
+            color: #10b981;
+            margin-bottom: 15px;
+        }
+
+        .footer p {
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+
+        @media print {
+            @page {
+                size: A4;
+                margin: 0;
+            }
+
+            body {
+                background: white;
+                margin: 0;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                margin: 0;
+                border-radius: 0;
+                max-width: 100%;
+            }
+
+            .page {
+                page-break-after: always;
+                padding: 40px;
+            }
+
+            .cover {
+                page-break-after: always;
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            /* Ensure colors print */
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- COVER PAGE -->
+        <div class="cover">
+            <!-- Logo SVG (WellFitLife) -->
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="white">
+                <text x="10" y="40" font-family="Poppins, sans-serif" font-size="32" font-weight="900" letter-spacing="-1">
+                    WellFitLife
+                </text>
+                <circle cx="185" cy="25" r="8" fill="white" opacity="0.8"/>
+            </svg>
+
+            <h1>7-Day Indian<br>Fat Loss Meal Plan</h1>
+
+            <div style="position: relative; z-index: 1; margin: 25px 0;">
+                <span class="badge">🥗 Scientifically Designed</span>
+                <span class="badge">🇮🇳 Indian Cuisine</span>
+                <span class="badge">💪 1,400-1,600 Cal/Day</span>
+            </div>
+
+            <p class="subtitle">Your Complete Guide to Healthy Weight Loss • 2026 Edition</p>
+        </div>
+
+        <!-- PAGE 1: INTRODUCTION -->
+        <div class="page">
+            <h2>📖 How to Use This Meal Plan</h2>
+
+            <h3>🎯 Who Is This For?</h3>
+            <p>This meal plan is designed for:</p>
+            <ul>
+                <li><strong>Weight Loss Goal:</strong> Lose 2-4 kg per month</li>
+                <li><strong>Activity Level:</strong> Moderate (3-4 workouts per week)</li>
+                <li><strong>Calorie Target:</strong> 1,400-1,600 calories/day</li>
+                <li><strong>Diet Type:</strong> Balanced Indian vegetarian/non-vegetarian</li>
+            </ul>
+
+            <h3>✅ Important Guidelines</h3>
+            <ol>
+                <li><strong>Hydration:</strong> Drink 3-4 liters of water daily</li>
+                <li><strong>Timing:</strong> Eat meals at regular intervals (every 3-4 hours)</li>
+                <li><strong>Portions:</strong> Use measuring cups/kitchen scale for accuracy</li>
+                <li><strong>Exercise:</strong> Combine with 30-45 min daily workout</li>
+                <li><strong>Flexibility:</strong> Swap similar items (brown rice ↔ quinoa)</li>
+                <li><strong>Cheat Meal:</strong> One planned cheat meal per week</li>
+            </ol>
+
+            <div class="tip-box">
+                <strong>⚠️ Important:</strong> Consult a healthcare professional before starting any new diet plan, especially if you have existing health conditions.
+            </div>
+
+            <h3>🔥 Expected Results</h3>
+            <ul>
+                <li>Week 1: 1-1.5 kg weight loss (mostly water weight)</li>
+                <li>Week 2-4: 0.5-1 kg sustainable fat loss per week</li>
+                <li>Increased energy levels and better digestion</li>
+                <li>Reduced bloating and improved skin health</li>
+            </ul>
+        </div>
+
+        <!-- DAY 1 -->
+        <div class="page">
+            <div class="day-header">
+                <h3>📅 Day 1: Monday</h3>
+            </div>
+
+            <div class="meal-card">
+                <h4>🌅 Breakfast (7:00 AM) <span class="calories">350 cal</span></h4>
+                <ul class="meal-items">
+                    <li><strong>Oats Upma</strong> with vegetables (1 cup)</li>
+                    <li>Mixed veggies (carrot, peas, beans) - 1/2 cup</li>
+                    <li>1 tsp oil + Indian spices</li>
+                    <li>Green tea (no sugar)</li>
+                </ul>
+            </div>
+
+            <div class="meal-card">
+                <h4>🍎 Mid-Morning Snack (10:30 AM) <span class="calories">120 cal</span></h4>
+                <ul class="meal-items">
+                    <li>1 medium apple</li>
+                    <li>10 almonds (soaked overnight)</li>
+                </ul>
+            </div>
+
+            <div class="meal-card">
+                <h4>🍛 Lunch (1:00 PM) <span class="calories">450 cal</span></h4>
+                <ul class="meal-items">
+                    <li><strong>Moong Dal</strong> (1 cup)</li>
+                    <li>Brown rice (1 cup, cooked)</li>
+                    <li>Cucumber-tomato salad (1 bowl)</li>
+                    <li>1 tsp ghee</li>
+                    <li>Buttermilk (1 glass, unsalted)</li>
+                </ul>
+            </div>
+
+            <div class="meal-card">
+                <h4>☕ Evening Snack (4:30 PM) <span class="calories">150 cal</span></h4>
+                <ul class="meal-items">
+                    <li>Masala chai (with low-fat milk, minimal sugar)</li>
+                    <li>2 whole wheat digestive biscuits</li>
+                </ul>
+            </div>
+
+            <div class="meal-card">
+                <h4>🌙 Dinner (7:30 PM) <span class="calories">400 cal</span></h4>
+                <ul class="meal-items">
+                    <li><strong>Grilled Paneer Tikka</strong> (100g)</li>
+                    <li>2 whole wheat rotis</li>
+                    <li>Stir-fried mixed vegetables (1 cup)</li>
+                    <li>Green chutney (mint-coriander)</li>
+                </ul>
+            </div>
+
+            <div class="macro-summary">
+                <div class="macro-item">
+                    <strong>1,470</strong>
+                    <span>Total Calories</span>
+                </div>
+                <div class="macro-item">
+                    <strong>65g</strong>
+                    <span>Protein</span>
+                </div>
+                <div class="macro-item">
+                    <strong>180g</strong>
+                    <span>Carbs</span>
+                </div>
+                <div class="macro-item">
+                    <strong>35g</strong>
+                    <span>Fats</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- DAY 2 -->
+        <div class="page">
+            <div class="day-header">
+                <h3>📅 Day 2: Tuesday</h3>
+            </div>
+
+            <div class="meal-card">
+                <h4>🌅 Breakfast (7:00 AM) <span class="calories">340 cal</span></h4>
+                <ul class="meal-items">
+                    <li><strong>Vegetable Poha</strong> (1.5 cups)</li>
+                    <li>Peanuts + curry leaves + green chili</li>
+                    <li>1 tsp oil</li>
+                    <li>Black coffee (no sugar)</li>
+                </ul>
+            </div>
+
+            <div class="meal-card">
+                <h4>🥤 Mid-Morning Snack (10:30 AM) <span class="calories">100 cal</span></h4>
+                <ul class="meal-items">
+                    <li>Banana smoothie (1 banana + 1/2 cup low-fat milk)</li>
+                </ul>
+            </div>
+
+            <div class="meal-card">
+                <h4>🍛 Lunch (1:00 PM) <span class="calories">460 cal</span></h4>
+                <ul class="meal-items">
+                    <li><strong>Rajma (Kidney Beans) Curry</strong> (1 cup)</li>
+                    <li>Quinoa (1 cup, cooked)</li>
+                    <li>Onion-cucumber raita (1 small bowl)</li>
+                    <li>Mixed green salad</li>
+                </ul>
+            </div>
+
+            <div class="meal-card">
+                <h4>🥕 Evening Snack (4:30 PM) <span class="calories">140 cal</span></h4>
+                <ul class="meal-items">
+                    <li>Carrot + cucumber sticks (1 cup)</li>
+                    <li>Hummus dip (2 tbsp)</li>
+                </ul>
+            </div>
+
+            <div class="meal-card">
+                <h4>🌙 Dinner (7:30 PM) <span class="calories">420 cal</span></h4>
+                <ul class="meal-items">
+                    <li><strong>Grilled Chicken Breast</strong> (150g) OR Tofu</li>
+                    <li>1 whole wheat roti</li>
+                    <li>Palak (spinach) sabzi (1 cup)</li>
+                    <li>Tomato soup (1 bowl, clear)</li>
+                </ul>
+            </div>
+
+            <div class="macro-summary">
+                <div class="macro-item">
+                    <strong>1,460</strong>
+                    <span>Total Calories</span>
+                </div>
+                <div class="macro-item">
+                    <strong>70g</strong>
+                    <span>Protein</span>
+                </div>
+                <div class="macro-item">
+                    <strong>175g</strong>
+                    <span>Carbs</span>
+                </div>
+                <div class="macro-item">
+                    <strong>38g</strong>
+                    <span>Fats</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- DAY 3 -->
+        <div class="page">
+            <div class="day-header">
+                <h3>📅 Day 3: Wednesday</h3>
+            </div>
+
+            <div class="meal-card">
+                <h4>🌅 Breakfast (7:00 AM) <span class="calories">360 cal</span></h4>
+                <ul class="meal-items">
+                    <li><strong>Idli</strong> (3 medium) with sambar</li>
+                    <li>Coconut chutney (2 tbsp)</li>
+                    <li>Herbal tea</li>
+                </ul>
+            </div>
+
+            <div class="meal-card">
+                <h4>�� Mid-Morning Snack (10:30 AM) <span class="calories">110 cal</span></h4>
+                <ul class="meal-items">
+                    <li>1 orange</li>
+                    <li>5 walnuts</li>
+                </ul>
+            </div>
+
+            <div class="meal-card">
+                <h4>🍛 Lunch (1:00 PM) <span class="calories">440 cal</span></h4>
+                <ul class="meal-items">
+                    <li><strong>Chana (Chickpea) Curry</strong> (1 cup)</li>
+                    <li>Bajra roti (2 medium)</li>
+                    <li>Mixed vegetable salad (1 bowl)</li>
+                    <li>Lemon water</li>
+                </ul>
+            </div>
+
+            <div class="meal-card">
+                <h4>🥜 Evening Snack (4:30 PM) <span class="calories">130 cal</span></h4>
+                <ul class="meal-items">
+                    <li>Roasted makhana (fox nuts) - 1 cup</li>
+                    <li>Green tea</li>
+                </ul>
+            </div>
+
+            <div class="meal-card">
+                <h4>🌙 Dinner (7:30 PM) <span class="calories">410 cal</span></h4>
+                <ul class="meal-items">
+                    <li><strong>Fish Curry</strong> (150g, grilled/steamed) OR Egg Bhurji</li>
+                    <li>Brown rice (1/2 cup)</li>
+                    <li>Cabbage-carrot stir-fry (1 cup)</li>
+                </ul>
+            </div>
+
+            <div class="macro-summary">
+                <div class="macro-item">
+                    <strong>1,450</strong>
+                    <span>Total Calories</span>
+                </div>
+                <div class="macro-item">
+                    <strong>68g</strong>
+                    <span>Protein</span>
+                </div>
+                <div class="macro-item">
+                    <strong>170g</strong>
+                    <span>Carbs</span>
+                </div>
+                <div class="macro-item">
+                    <strong>40g</strong>
+                    <span>Fats</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- DAY 4 -->
+        <div class="page">
+            <div class="day-header">
+                <h3>📅 Day 4: Thursday</h3>
+            </div>
+
+            <div class="meal-card">
+                <h4>🌅 Breakfast (7:00 AM) <span class="calories">350 cal</span></h4>
+                <ul class="meal-items">
+                    <li><strong>Moong Dal Cheela</strong> (2 medium)</li>
+                    <li>Green chutney</li>
+                    <li>Low-fat curd (1/2 cup)</li>
+                    <li>Black coffee</li>
+                </ul>
+            </div>
+
+            <div class="meal-card">
+                <h4>🍓 Mid-Morning Snack (10:30 AM) <span class="calories">100 cal</span></h4>
+                <ul class="meal-items">
+                    <li>Mixed berries (1 cup) OR seasonal fruit</li>
+                </ul>
+            </div>
+
+            <div class="meal-card">
+                <h4>🍛 Lunch (1:00 PM) <span class="calories">470 cal</span></h4>
+                <ul class="meal-items">
+                    <li><strong>Mix Veg Curry</strong> (1.5 cups)</li>
+                    <li>Jowar roti (2 medium)</li>
+                    <li>Dal fry (1/2 cup)</li>
+                    <li>Onion salad</li>
+                </ul>
+            </div>
+
+            <div class="meal-card">
+                <h4>🥛 Evening Snack (4:30 PM) <span class="calories">140 cal</span></h4>
+                <ul class="meal-items">
+                    <li>Masala buttermilk (1 glass)</li>
+                    <li>Roasted chana (1/4 cup)</li>
+                </ul>
+            </div>
+
+            <div class="meal-card">
+                <h4>🌙 Dinner (7:30 PM) <span class="calories">400 cal</span></h4>
+                <ul class="meal-items">
+                    <li><strong>Grilled Paneer</strong> (100g) with bell peppers</li>
+                    <li>Whole wheat roti (1 medium)</li>
+                    <li>Broccoli sabzi (1 cup)</li>
+                </ul>
+            </div>
+
+            <div class="macro-summary">
+                <div class="macro-item">
+                    <strong>1,460</strong>
+                    <span>Total Calories</span>
+                </div>
+                <div class="macro-item">
+                    <strong>63g</strong>
+                    <span>Protein</span>
+                </div>
+                <div class="macro-item">
+                    <strong>182g</strong>
+                    <span>Carbs</span>
+                </div>
+                <div class="macro-item">
+                    <strong>36g</strong>
+                    <span>Fats</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- DAY 5, 6, 7 and additional pages continue... -->
+
+        <!-- SHOPPING LIST -->
+        <div class="page">
+            <h2>🛒 Weekly Shopping List</h2>
+
+            <h3>Grains & Cereals</h3>
+            <ul>
+                <li>Oats - 500g</li>
+                <li>Brown rice - 1 kg</li>
+                <li>Quinoa - 500g</li>
+                <li>Whole wheat flour - 1 kg</li>
+                <li>Bajra/Jowar flour - 500g each</li>
+            </ul>
+
+            <h3>Proteins</h3>
+            <ul>
+                <li>Paneer - 500g</li>
+                <li>Chicken breast - 500g (if non-veg)</li>
+                <li>Fish - 300g (if non-veg)</li>
+                <li>Eggs - 12 pieces</li>
+                <li>Moong dal - 500g</li>
+                <li>Masoor dal - 500g</li>
+                <li>Rajma - 250g</li>
+                <li>Chana - 250g</li>
+            </ul>
+
+            <h3>Vegetables</h3>
+            <ul>
+                <li>Spinach - 500g</li>
+                <li>Broccoli - 250g</li>
+                <li>Carrot - 500g</li>
+                <li>Cucumber - 500g</li>
+                <li>Tomatoes - 1 kg</li>
+                <li>Onions - 500g</li>
+                <li>Capsicum/Bell peppers - 250g</li>
+                <li>Cabbage - 1 medium</li>
+                <li>Mixed vegetables (beans, peas) - 500g</li>
+            </ul>
+
+            <h3>Fruits</h3>
+            <ul>
+                <li>Apples - 7 pieces</li>
+                <li>Bananas - 7 pieces</li>
+                <li>Oranges - 5 pieces</li>
+                <li>Seasonal fruits - as needed</li>
+            </ul>
+
+            <h3>Dairy & Alternatives</h3>
+            <ul>
+                <li>Low-fat milk - 2 liters</li>
+                <li>Low-fat curd - 500g</li>
+                <li>Buttermilk - 1 liter</li>
+            </ul>
+
+            <h3>Nuts & Seeds</h3>
+            <ul>
+                <li>Almonds - 200g</li>
+                <li>Walnuts - 100g</li>
+                <li>Peanuts - 200g</li>
+                <li>Roasted chana - 200g</li>
+                <li>Makhana - 100g</li>
+            </ul>
+
+            <h3>Oils & Spices</h3>
+            <ul>
+                <li>Olive oil / Mustard oil - 250ml</li>
+                <li>Ghee - 100g</li>
+                <li>Indian spices (turmeric, cumin, coriander, etc.)</li>
+                <li>Green tea bags</li>
+                <li>Coffee</li>
+            </ul>
+        </div>
+
+        <!-- TIPS & FAQS -->
+        <div class="page">
+            <h2>💡 Pro Tips for Success</h2>
+
+            <h3>Meal Prep Strategies</h3>
+            <ol>
+                <li><strong>Sunday Prep:</strong> Cook brown rice, boil eggs, cut vegetables</li>
+                <li><strong>Dal in Bulk:</strong> Make 2-3 days worth and refrigerate</li>
+                <li><strong>Roti Dough:</strong> Prepare fresh daily for best results</li>
+                <li><strong>Salads:</strong> Cut veggies in morning, store in airtight container</li>
+            </ol>
+
+            <h3>Eating Out? Smart Swaps</h3>
+            <ul>
+                <li>Fried rice → Steamed brown rice</li>
+                <li>Butter chicken → Tandoori chicken</li>
+                <li>Paneer butter masala → Paneer tikka</li>
+                <li>Naan → Whole wheat roti</li>
+                <li>Sugary drinks → Lime water / buttermilk</li>
+            </ul>
+
+            <h3>Portion Control Hacks</h3>
+            <ul>
+                <li>Use smaller plates (8-9 inch diameter)</li>
+                <li>Fill half plate with vegetables</li>
+                <li>Eat slowly, chew 20-30 times</li>
+                <li>Wait 10 min before second serving</li>
+                <li>Drink water 30 min before meals</li>
+            </ul>
+
+            <div class="tip-box">
+                <strong>💪 Exercise Tip:</strong> Combine this diet with 30-45 min daily exercise:
+                <ul style="margin-top: 10px;">
+                    <li>Cardio: Brisk walking, jogging, cycling</li>
+                    <li>Strength: Bodyweight exercises, dumbbells</li>
+                    <li>Yoga: Sun salutations, power yoga</li>
+                </ul>
+            </div>
+
+            <h3>Common Mistakes to Avoid</h3>
+            <ol>
+                <li>❌ Skipping breakfast</li>
+                <li>❌ Not drinking enough water</li>
+                <li>❌ Eating too fast</li>
+                <li>❌ Irregular meal timing</li>
+                <li>❌ Eliminating food groups completely</li>
+                <li>❌ Comparing your progress to others</li>
+            </ol>
+
+            <h3>Frequently Asked Questions</h3>
+
+            <h4>Q: Can I swap meals between days?</h4>
+            <p>Yes! Feel free to repeat meals you enjoy. The plan is flexible.</p>
+
+            <h4>Q: I'm vegetarian. What about protein?</h4>
+            <p>Replace chicken/fish with paneer, tofu, legumes (dal, rajma, chana). Add extra protein sources like Greek yogurt, quinoa.</p>
+
+            <h4>Q: Can I have cheat meals?</h4>
+            <p>Yes! One planned cheat meal per week helps maintain sanity and prevents binging.</p>
+
+            <h4>Q: I'm not losing weight. What should I do?</h4>
+            <p>Check portions, increase water intake, add 10 min more exercise, ensure proper sleep (7-8 hours).</p>
+        </div>
+
+        <!-- FOOTER / CONTACT -->
+        <div class="footer">
+            <h3>Need More Help?</h3>
+            <p>📧 Email: hello@wellfitlife.in</p>
+            <p>🌐 Website: https://wellfitlife.in</p>
+            <p>📖 Read more fitness & nutrition articles on our blog</p>
+
+            <p style="margin-top: 30px; font-size: 14px; opacity: 0.7;">
+                This meal plan is for educational purposes. Consult a doctor/nutritionist before making dietary changes.
+            </p>
+
+            <p style="margin-top: 20px; font-weight: 600; color: #10b981;">
+                © 2026 WellFitLife.in - Your Fitness Companion
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>
