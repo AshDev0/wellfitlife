@@ -16,6 +16,7 @@ import BlogCard from "../components/blog/BlogCard";
 import SocialShare from "../components/SocialShare";
 import ReadingProgressBar from "../components/common/ReadingProgressBar";
 import BackToTop from "../components/common/BackToTop";
+import InlineBlogSubscribe from "../components/InlineBlogSubscribe";
 import { useBlogPost, useRelatedPosts } from "../hooks/useBlog";
 
 export default function BlogPost() {
@@ -138,6 +139,11 @@ export default function BlogPost() {
             description={post.excerpt}
           />
         </div>
+      </div>
+
+      {/* ================= NEWSLETTER SUBSCRIBE (INLINE) ================= */}
+      <div className="max-w-4xl mx-auto px-6 lg:px-8">
+        <InlineBlogSubscribe />
       </div>
 
       {/* ================= AUTHOR BOX ================= */}

@@ -22,6 +22,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./components/layout/Layout";
 import ScrollToTop from "./utils/ScrollToTop";
+import NewsletterPopup from "./components/NewsletterPopup";
 
 // Pages
 import Home from "./pages/Home";
@@ -36,6 +37,9 @@ function App() {
     <Router>
       {/* ScrollToTop on route change */}
       <ScrollToTop />
+
+      {/* Newsletter Popup - Shows after 10 seconds on first visit */}
+      <NewsletterPopup />
 
       <Routes>
         {/* Layout wrapper for all pages */}
