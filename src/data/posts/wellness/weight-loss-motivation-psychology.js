@@ -246,12 +246,16 @@ export default {
         </section>
       </div>
   `,
-  category: "Wellness",
-  tags: ["weight-loss-motivation", "fitness-psychology", "consistency-tips", "mindset-for-fat-loss", "discipline-over-motivation"],
   image: "/images/blog_27.webp",
-  author: "WellFitLife Team",
-  readTime: "10 min read",
-  date: "2026-01-02",
+  author: {
+    name: "WellFitLife",
+    avatar: logo,
+    bio: "Your trusted companion for fitness, nutrition, and wellness guidance."
+  },
+  publishedDate: "2026-01-02",
+  category: "Wellness",
+  readingTime: "10 min read",
+  tags: ["weight-loss-motivation", "fitness-psychology", "consistency-tips", "mindset-for-fat-loss", "discipline-over-motivation"],
   featured: false,
   metaDescription: "Stay motivated in your weight loss journey using psychology-based strategies. Learn mindset tricks, habit loops, small wins, and long-term consistency methods.",
   metaKeywords: "motivation for weight loss, stay consistent fitness, fat loss mindset india, psychology of motivation, habit building weight loss",

@@ -213,12 +213,16 @@ export default {
         </section>
       </div>
   `,
-  category: "Fitness",
-  tags: ["fat-loss-mistakes", "weight-loss-tips", "common-diet-errors", "fitness-beginners-india", "stop-cravings"],
   image: "/images/blog_30.webp",
-  author: "WellFitLife Team",
-  readTime: "8 min read",
-  date: "2026-01-02",
+  author: {
+    name: "WellFitLife",
+    avatar: logo,
+    bio: "Your trusted companion for fitness, nutrition, and wellness guidance."
+  },
+  publishedDate: "2026-01-02",
+  category: "Fitness",
+  readingTime: "8 min read",
+  tags: ["fat-loss-mistakes", "weight-loss-tips", "common-diet-errors", "fitness-beginners-india", "stop-cravings"],
   featured: false,
   metaDescription: "Top mistakes slowing your fat loss. Fix protein intake, dinner timing, hydration, sleep & workouts for faster visible weight loss results.",
   metaKeywords: "fat loss mistakes india, why am i not losing weight, weight loss slow fix, beginner fat loss errors, diet mistake correction",

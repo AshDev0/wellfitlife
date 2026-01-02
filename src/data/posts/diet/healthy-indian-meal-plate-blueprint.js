@@ -220,12 +220,16 @@ export default {
         </section>
       </div>
   `,
-  category: "Diet",
-  tags: ["indian-meal-plate", "fat-loss-meal-plan", "healthy-diet-india", "balanced-meal-structure", "weightloss-nutrition"],
   image: "/images/blog_26.webp",
-  author: "WellFitLife Team",
-  readTime: "8 min read",
-  date: "2026-01-02",
+  author: {
+    name: "WellFitLife",
+    avatar: logo,
+    bio: "Your trusted companion for fitness, nutrition, and wellness guidance."
+  },
+  publishedDate: "2026-01-02",
+  category: "Diet",
+  readingTime: "8 min read",
+  tags: ["indian-meal-plate", "fat-loss-meal-plan", "healthy-diet-india", "balanced-meal-structure", "weightloss-nutrition"],
   featured: false,
   metaDescription: "Healthy Indian meal plate model for fat loss. Follow 50-25-25 rule for balanced nutrition using Indian foods. Breakfast, lunch, dinner examples included.",
   metaKeywords: "indian diet plate, fat loss meal plate, portion control india, healthy meal blueprint, weight loss indian food",

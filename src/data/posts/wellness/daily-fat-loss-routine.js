@@ -263,12 +263,16 @@ export default {
         </section>
       </div>
   `,
-  category: "Wellness",
-  tags: ["daily-fat-loss-routine", "weight-loss-habits", "full-day-diet-plan", "fatloss-lifestyle", "fitness-daily-schedule"],
   image: "/images/blog_28.webp",
-  author: "WellFitLife Team",
-  readTime: "9 min read",
-  date: "2026-01-02",
+  author: {
+    name: "WellFitLife",
+    avatar: logo,
+    bio: "Your trusted companion for fitness, nutrition, and wellness guidance."
+  },
+  publishedDate: "2026-01-02",
+  category: "Wellness",
+  readingTime: "9 min read",
+  tags: ["daily-fat-loss-routine", "weight-loss-habits", "full-day-diet-plan", "fatloss-lifestyle", "fitness-daily-schedule"],
   featured: false,
   metaDescription: "Daily fat-loss routine for beginners. Morning to night habit plan including breakfast, lunch, dinner, water, workouts and sleep routine.",
   metaKeywords: "daily fat loss routine, full day weight loss plan india, beginner fat loss schedule, daily fitness habits, fat burning daily routine",

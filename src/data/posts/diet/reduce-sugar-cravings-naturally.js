@@ -255,12 +255,16 @@ export default {
         </section>
       </div>
   `,
-  category: "Diet",
-  tags: ["sugar-craving-solutions", "stop-sugar-india", "sweet-cravings-control", "fat-loss-tips", "healthy-snacks"],
   image: "/images/blog_29.webp",
-  author: "WellFitLife Team",
-  readTime: "9 min read",
-  date: "2026-01-02",
+  author: {
+    name: "WellFitLife",
+    avatar: logo,
+    bio: "Your trusted companion for fitness, nutrition, and wellness guidance."
+  },
+  publishedDate: "2026-01-02",
+  category: "Diet",
+  readingTime: "9 min read",
+  tags: ["sugar-craving-solutions", "stop-sugar-india", "sweet-cravings-control", "fat-loss-tips", "healthy-snacks"],
   featured: false,
   metaDescription: "How to control sugar cravings naturally using simple hacks. Reduce sweets without quitting food. Includes snack swaps, habit tricks & weekly challenge.",
   metaKeywords: "reduce sugar cravings india, stop sweet cravings tips, healthy sugar alternatives, fat loss without sugar, sugar habit break",
