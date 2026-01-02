@@ -265,7 +265,7 @@ export default {
   `,
   category: "Wellness",
   tags: ["daily-fat-loss-routine", "weight-loss-habits", "full-day-diet-plan", "fatloss-lifestyle", "fitness-daily-schedule"],
-  image: "/images/blog/blog_28.webp",
+  image: "/images/blog_28.webp",
   author: "WellFitLife Team",
   readTime: "9 min read",
   date: "2026-01-02",

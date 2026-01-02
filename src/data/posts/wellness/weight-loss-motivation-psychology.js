@@ -248,7 +248,7 @@ export default {
   `,
   category: "Wellness",
   tags: ["weight-loss-motivation", "fitness-psychology", "consistency-tips", "mindset-for-fat-loss", "discipline-over-motivation"],
-  image: "/images/blog/blog_27.webp",
+  image: "/images/blog_27.webp",
   author: "WellFitLife Team",
   readTime: "10 min read",
   date: "2026-01-02",

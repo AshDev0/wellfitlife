@@ -222,7 +222,7 @@ export default {
   `,
   category: "Diet",
   tags: ["indian-meal-plate", "fat-loss-meal-plan", "healthy-diet-india", "balanced-meal-structure", "weightloss-nutrition"],
-  image: "/images/blog/blog_26.webp",
+  image: "/images/blog_26.webp",
   author: "WellFitLife Team",
   readTime: "8 min read",
   date: "2026-01-02",

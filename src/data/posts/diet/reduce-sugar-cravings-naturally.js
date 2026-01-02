@@ -257,7 +257,7 @@ export default {
   `,
   category: "Diet",
   tags: ["sugar-craving-solutions", "stop-sugar-india", "sweet-cravings-control", "fat-loss-tips", "healthy-snacks"],
-  image: "/images/blog/blog_29.webp",
+  image: "/images/blog_29.webp",
   author: "WellFitLife Team",
   readTime: "9 min read",
   date: "2026-01-02",

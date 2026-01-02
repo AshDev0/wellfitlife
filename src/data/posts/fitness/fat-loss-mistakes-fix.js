@@ -215,7 +215,7 @@ export default {
   `,
   category: "Fitness",
   tags: ["fat-loss-mistakes", "weight-loss-tips", "common-diet-errors", "fitness-beginners-india", "stop-cravings"],
-  image: "/images/blog/blog_30.webp",
+  image: "/images/blog_30.webp",
   author: "WellFitLife Team",
   readTime: "8 min read",
   date: "2026-01-02",
