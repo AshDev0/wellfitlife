@@ -1,9 +1,11 @@
 import Hero from '../components/Hero';
 import CategoryHighlights from '../components/CategoryHighlights';
 import FeaturedArticles from '../components/FeaturedArticles';
+import TrendingPosts from '../components/TrendingPosts';
 import CTASection from '../components/CTASection';
 import FAQ from '../components/FAQ';
 import BackToTop from '../components/common/BackToTop';
+import blogPosts from '../data/posts';
 
 const Home = () => {
   return (
@@ -13,6 +15,9 @@ const Home = () => {
 
       {/* Hero Section */}
       <Hero />
+
+      {/* Trending Posts Section - NEW! */}
+      <TrendingPosts posts={blogPosts} />
 
       {/* Category Highlights Section */}
       <CategoryHighlights />

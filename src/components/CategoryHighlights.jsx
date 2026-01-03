@@ -1,4 +1,3 @@
-import React from 'react';
 import { Dumbbell, Apple, Heart } from 'lucide-react';
 
 const CategoryHighlights = () => {
@@ -8,21 +7,24 @@ const CategoryHighlights = () => {
       Icon: Dumbbell,
       title: "Fitness Routines",
       description: "Effective workouts tailored for all fitness levels",
-      iconBg: "bg-gradient-to-br from-emerald-500 to-emerald-600"
+      iconBg: "bg-gradient-to-br from-emerald-500 to-emerald-600",
+      hoverBorder: "hover:border-emerald-200"
     },
     {
       id: 2,
       Icon: Apple,
       title: "Diet Plans",
       description: "Personalized meal plans and expert nutrition guidance",
-      iconBg: "bg-gradient-to-br from-orange-500 to-amber-600"
+      iconBg: "bg-gradient-to-br from-teal-500 to-teal-600",
+      hoverBorder: "hover:border-teal-200"
     },
     {
       id: 3,
       Icon: Heart,
       title: "Wellness Lifestyle",
       description: "Mindfulness practices for holistic well-being",
-      iconBg: "bg-gradient-to-br from-cyan-500 to-blue-600"
+      iconBg: "bg-gradient-to-br from-cyan-500 to-cyan-600",
+      hoverBorder: "hover:border-cyan-200"
     }
   ];
 
@@ -51,7 +53,7 @@ const CategoryHighlights = () => {
                 className="group animate-slide-up"
                 style={{ animationDelay: `${index * 150}ms` }}
               >
-                <div className="relative bg-white rounded-2xl p-6 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-xl shadow-md border border-gray-100 flex items-center gap-6">
+                <div className={`relative bg-white rounded-2xl p-6 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-xl shadow-md border-2 border-gray-100 ${category.hoverBorder} flex items-center gap-6`}>
 
                   {/* Icon Container - Left Side */}
                   <div className="shrink-0">

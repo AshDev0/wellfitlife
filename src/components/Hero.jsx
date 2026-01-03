@@ -7,7 +7,7 @@ const HeroSection = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="relative w-full min-h-[100vh] md:min-h-[calc(100vh-5rem)] overflow-hidden bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-100">
+    <section className="relative w-full min-h-screen overflow-hidden bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-100">
 
       {/* Decorative Background Pattern */}
       <div className="absolute inset-0 opacity-[0.04] pointer-events-none hidden md:block">
@@ -37,8 +37,8 @@ const HeroSection = () => {
         <div className="hidden md:block absolute bottom-[40%] right-12 lg:right-16 w-2 h-2 bg-teal-300 rounded-full shadow-md opacity-60 animate-pulse" style={{animationDelay: '0.6s'}}></div>
       </div>
 
-      {/* Content Container */}
-      <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex items-center min-h-[100vh] md:min-h-[calc(100vh-5rem)] py-20 md:py-16 lg:py-0">
+      {/* Content Container - Proper spacing from navbar */}
+      <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex items-center min-h-screen pt-32 pb-20 md:pt-40 md:pb-24 lg:pt-32 lg:pb-20">
         <div className="w-full lg:w-1/2 xl:w-2/5 z-10 text-center md:text-left">
 
           {/* Main Heading - Improved mobile sizing */}
@@ -49,9 +49,25 @@ const HeroSection = () => {
           </h1>
 
           {/* Description - Better mobile readability */}
-          <p className="text-base sm:text-lg lg:text-xl text-gray-700 leading-relaxed max-w-xl mx-auto md:mx-0 mb-8 md:mb-10 font-medium">
+          <p className="text-base sm:text-lg lg:text-xl text-gray-700 leading-relaxed max-w-xl mx-auto md:mx-0 mb-6 md:mb-8 font-medium">
             Achieve a healthier lifestyle with expert fitness tips, easy workouts, and balanced diets tailored for you.
           </p>
+
+          {/* Social Proof Badge */}
+          <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 mb-8 md:mb-10">
+            <div className="flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-md border border-gray-200">
+              <span className="text-2xl">🇮🇳</span>
+              <span className="text-sm font-semibold text-gray-700">Free Indian Meal Plans</span>
+            </div>
+            <div className="flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-md border border-gray-200">
+              <span className="text-2xl">💪</span>
+              <span className="text-sm font-semibold text-gray-700">30+ Expert Guides</span>
+            </div>
+            <div className="flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-md border border-gray-200">
+              <span className="text-2xl">⚡</span>
+              <span className="text-sm font-semibold text-gray-700">Home Workouts</span>
+            </div>
+          </div>
 
           {/* CTA Buttons - Improved mobile styling */}
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center md:justify-start">

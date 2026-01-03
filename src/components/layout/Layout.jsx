@@ -15,6 +15,7 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import StickyNewsletterBar from "../StickyNewsletterBar";
 
 export default function Layout() {
   return (
@@ -29,6 +30,9 @@ export default function Layout() {
 
       {/* Footer */}
       <Footer />
+
+      {/* Sticky Newsletter Bar (appears after scroll) */}
+      <StickyNewsletterBar />
     </div>
   );
 }

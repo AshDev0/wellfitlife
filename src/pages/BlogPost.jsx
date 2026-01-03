@@ -14,10 +14,12 @@
 import { useParams, Navigate, useNavigate, Link } from "react-router-dom";
 import BlogCard from "../components/blog/BlogCard";
 import SocialShare from "../components/SocialShare";
+import RelatedPosts from "../components/RelatedPosts";
 import ReadingProgressBar from "../components/common/ReadingProgressBar";
 import BackToTop from "../components/common/BackToTop";
 import InlineBlogSubscribe from "../components/InlineBlogSubscribe";
 import { useBlogPost, useRelatedPosts } from "../hooks/useBlog";
+import blogPosts from "../data/posts";
 
 export default function BlogPost() {
   const { slug } = useParams();
@@ -163,38 +165,10 @@ export default function BlogPost() {
         </section>
       )}
 
-      {/* ================= RELATED POSTS ================= */}
-      {relatedPosts.length > 0 && (
-        <section className="relative bg-linear-to-br from-emerald-50 via-white to-cyan-50 py-20">
-          {/* Decorative blur blobs */}
-          <div className="absolute top-0 left-10 w-72 h-72 bg-emerald-400/10 blur-[100px] pointer-events-none"></div>
-          <div className="absolute bottom-0 right-10 w-72 h-72 bg-cyan-400/10 blur-[100px] pointer-events-none"></div>
-
-          <div className="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
-            <div className="text-center mb-12">
-              <h3 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-3">
-                Continue Reading
-              </h3>
-              <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-                Explore more articles that might interest you
-              </p>
-            </div>
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
-              {relatedPosts.map((relatedPost) => (
-                <BlogCard
-                  key={relatedPost.id}
-                  image={relatedPost.image}
-                  title={relatedPost.title}
-                  description={relatedPost.excerpt}
-                  slug={relatedPost.slug}
-                  category={relatedPost.category}
-                  readingTime={relatedPost.readingTime}
-                />
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
+      {/* ================= RELATED POSTS - ENHANCED ================= */}
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
+        <RelatedPosts currentPost={post} allPosts={blogPosts} />
+      </div>
 
     </div>
   );
