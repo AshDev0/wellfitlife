@@ -5,11 +5,17 @@ import TrendingPosts from '../components/TrendingPosts';
 import CTASection from '../components/CTASection';
 import FAQ from '../components/FAQ';
 import BackToTop from '../components/common/BackToTop';
+import OrganizationSchema from '../components/OrganizationSchema';
+import WebsiteSchema from '../components/WebsiteSchema';
 import blogPosts from '../data/posts';
 
 const Home = () => {
   return (
     <div className="min-h-screen">
+      {/* JSON-LD Schema for SEO */}
+      <OrganizationSchema />
+      <WebsiteSchema />
+
       {/* Back to Top Button */}
       <BackToTop />
 

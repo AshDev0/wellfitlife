@@ -1,0 +1,17 @@
+# Priority URLs for Manual Indexing Request
+# Submit 10 URLs per day in Google Search Console
+
+# High Priority (Day 1)
+https://wellfitlife.in/
+https://wellfitlife.in/blog
+https://wellfitlife.in/about
+https://wellfitlife.in/contact
+https://wellfitlife.in/blog/fat-loss-mistakes-fix
+https://wellfitlife.in/blog/reduce-sugar-cravings-naturally
+https://wellfitlife.in/blog/healthy-indian-meal-plate-blueprint
+https://wellfitlife.in/blog/weight-loss-motivation-psychology
+https://wellfitlife.in/blog/daily-fat-loss-routine
+https://wellfitlife.in/blog/7-day-beginner-home-workout-plan
+
+# Medium Priority (Day 2-3)
+# Add remaining 20 blog post URLs here...

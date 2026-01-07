@@ -15,6 +15,7 @@ import { useParams, Navigate, useNavigate, Link } from "react-router-dom";
 import BlogCard from "../components/blog/BlogCard";
 import SocialShare from "../components/SocialShare";
 import RelatedPosts from "../components/RelatedPosts";
+import BlogSchema from "../components/BlogSchema";
 import ReadingProgressBar from "../components/common/ReadingProgressBar";
 import BackToTop from "../components/common/BackToTop";
 import InlineBlogSubscribe from "../components/InlineBlogSubscribe";
@@ -46,6 +47,9 @@ export default function BlogPost() {
 
   return (
     <div className="bg-white text-[#1E293B]">
+      {/* JSON-LD Schema for SEO */}
+      <BlogSchema post={post} />
+
       {/* Reading Progress Bar */}
       <ReadingProgressBar />
 
