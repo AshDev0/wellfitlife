@@ -14,6 +14,7 @@
 
 import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import BlogCard from "../components/blog/BlogCard";
 import BackToTop from "../components/common/BackToTop";
 import { useBlogPosts } from "../hooks/useBlog";
@@ -103,6 +104,23 @@ export default function Blog() {
 
   return (
     <div className="bg-white text-[#1E293B]">
+      {/* SEO Meta Tags */}
+      <Helmet>
+        <title>Blog - Fitness, Diet & Wellness Articles | WellFitLife</title>
+        <meta name="description" content="Explore fitness guides, Indian diet plans, weight loss tips, and wellness articles. Practical, beginner-friendly content for a healthier lifestyle." />
+        <meta name="keywords" content="fitness blog, diet tips india, weight loss articles, wellness blog, healthy living tips, home workout guides" />
+        <link rel="canonical" href="https://wellfitlife.in/blog" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://wellfitlife.in/blog" />
+        <meta property="og:title" content="Blog - Fitness, Diet & Wellness Articles | WellFitLife" />
+        <meta property="og:description" content="Explore fitness guides, diet tips & healthy living articles curated for your wellness journey." />
+        <meta property="og:image" content="https://wellfitlife.in/images/hero-fitness-girl.webp" />
+        <meta property="og:site_name" content="WellFitLife" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="WellFitLife Blog - Fitness & Wellness Articles" />
+        <meta name="twitter:description" content="Explore fitness guides, diet tips & healthy living articles." />
+      </Helmet>
+
       {/* Back to Top Button */}
       <BackToTop />
 

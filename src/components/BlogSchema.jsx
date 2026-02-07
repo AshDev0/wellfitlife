@@ -82,8 +82,35 @@ export default function BlogSchema({ post }) {
     ]
   };
 
+  const postUrl = `https://wellfitlife.in/blog/${post.slug}`;
+  const imageUrl = post.image?.startsWith?.('http') ? post.image : `https://wellfitlife.in${post.image}`;
+
   return (
     <Helmet>
+      {/* Page Title */}
+      <title>{post.title} | WellFitLife</title>
+
+      {/* Primary Meta Tags */}
+      <meta name="description" content={post.metaDescription || post.excerpt} />
+      <meta name="keywords" content={post.metaKeywords || post.tags?.join(', ')} />
+      <link rel="canonical" href={postUrl} />
+
+      {/* Open Graph / Facebook */}
+      <meta property="og:type" content="article" />
+      <meta property="og:url" content={postUrl} />
+      <meta property="og:title" content={post.title} />
+      <meta property="og:description" content={post.metaDescription || post.excerpt} />
+      <meta property="og:image" content={imageUrl} />
+      <meta property="og:site_name" content="WellFitLife" />
+      <meta property="article:published_time" content={post.publishedDate} />
+      <meta property="article:section" content={post.category} />
+
+      {/* Twitter */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={post.title} />
+      <meta name="twitter:description" content={post.metaDescription || post.excerpt} />
+      <meta name="twitter:image" content={imageUrl} />
+
       {/* Article Schema */}
       <script type="application/ld+json">
         {JSON.stringify(articleSchema)}

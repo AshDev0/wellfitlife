@@ -3,12 +3,29 @@
    Premium UI | Consistent Branding | SEO Friendly
 ===================================================== */
 
+import { Helmet } from "react-helmet-async";
 import hero from "../../public/images/hero-fitness-girl.webp";          // Yoga wellness image from your pack
 import founderImg from "../../public/images/hero-fitness-girl.webp"; // Add your photo or placeholder
 
 export default function About() {
   return (
     <div className="bg-white text-[#1E293B]">
+      {/* SEO Meta Tags */}
+      <Helmet>
+        <title>About WellFitLife - Our Story, Mission & Vision</title>
+        <meta name="description" content="Learn about WellFitLife - a wellness initiative helping everyday people stay fit with simple workouts, balanced Indian food habits, and a healthy mindset." />
+        <meta name="keywords" content="about wellfitlife, fitness blog india, wellness initiative, healthy lifestyle mission" />
+        <link rel="canonical" href="https://wellfitlife.in/about" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://wellfitlife.in/about" />
+        <meta property="og:title" content="About WellFitLife - Our Story, Mission & Vision" />
+        <meta property="og:description" content="A wellness initiative built for everyday people — helping you stay fit with simple workouts, balanced food habits, and a healthy mindset." />
+        <meta property="og:image" content="https://wellfitlife.in/images/hero-fitness-girl.webp" />
+        <meta property="og:site_name" content="WellFitLife" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About WellFitLife" />
+        <meta name="twitter:description" content="A wellness initiative for everyday people." />
+      </Helmet>
 
       {/* =============== HERO SECTION =============== */}
       <section className="relative overflow-hidden text-center pt-28 pb-24">

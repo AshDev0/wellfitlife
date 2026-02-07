@@ -44,16 +44,18 @@ import post23 from './diet/protein-breakfast-ideas-indian.js';
 import post26 from './diet/healthy-indian-meal-plate-blueprint.js';
 import post29 from './diet/reduce-sugar-cravings-naturally.js';
 
-// Wellness Posts (Posts 20, 21, 25, 27, 28)
+// Wellness Posts (Posts 20, 21, 25, 27, 28, 31, 32)
 import post20 from './wellness/office-workers-fitness.js';
 import post21 from './wellness/mindful-eating-portion-control.js';
 import post25 from './wellness/gut-health-digestion-foods.js';
 import post27 from './wellness/weight-loss-motivation-psychology.js';
 import post28 from './wellness/daily-fat-loss-routine.js';
+import post31 from './wellness/morning-habits-fat-loss-naturally.js';
+import post32 from './wellness/pcos-weight-loss-guide.js';
 
 // All posts array (sorted by ID in descending order - latest first)
 const blogPosts = [
-  post30, post29, post28, post27, post26,
+  post32, post31, post30, post29, post28, post27, post26,
   post25, post24, post23, post22, post21,
   post20, post19, post18, post17, post16,
   post15, post14, post13, post12, post11,

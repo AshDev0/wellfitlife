@@ -3,9 +3,23 @@
    TEMPORARILY HIDDEN - Coming Soon Page
 ===================================================== */
 
+import { Helmet } from "react-helmet-async";
+
 export default function Contact() {
   return (
     <div className="bg-white text-[#1E293B] min-h-screen flex items-center justify-center">
+      {/* SEO Meta Tags */}
+      <Helmet>
+        <title>Contact Us - WellFitLife</title>
+        <meta name="description" content="Get in touch with WellFitLife. We'd love to hear from you about fitness, nutrition, and wellness topics." />
+        <meta name="keywords" content="contact wellfitlife, fitness blog contact, wellness support" />
+        <link rel="canonical" href="https://wellfitlife.in/contact" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://wellfitlife.in/contact" />
+        <meta property="og:title" content="Contact Us - WellFitLife" />
+        <meta property="og:description" content="Get in touch with WellFitLife for fitness, nutrition, and wellness queries." />
+        <meta property="og:site_name" content="WellFitLife" />
+      </Helmet>
 
       {/* Coming Soon Message */}
       <div className="max-w-2xl mx-auto px-6 text-center py-20">
