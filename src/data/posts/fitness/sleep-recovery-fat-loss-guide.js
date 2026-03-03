@@ -159,6 +159,15 @@ export default {
           <p class="text-gray-700 leading-relaxed mb-4">Fitness is not just about lifting weights or eating clean — it's about respecting your body's need to rest, repair and recover. Good sleep increases fat burn, stabilizes hunger, boosts muscle growth, sharpens mind, improves mood, skin and overall life quality.</p>
           <p class="font-bold text-indigo-700">A strong body requires quality rest just as much as training. Tonight, sleep on time — because your goals grow when you sleep.</p>
         </section>
+      
+        <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-6 my-8">
+          <p class="font-bold text-gray-900 mb-4 text-lg">📖 You Might Also Like:</p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/stress-weight-gain-connection" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">The Stress-Weight Gain Connection Explained</a></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/daily-fat-loss-routine" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">The Perfect Daily Fat Loss Routine</a></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/morning-habits-fat-loss-naturally" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">7 Morning Habits That Help You Lose Fat Naturally</a></li>
+          </ul>
+        </div>
       </div>
     `,
     image: "/images/blog_12.webp",

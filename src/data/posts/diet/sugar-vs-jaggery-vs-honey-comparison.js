@@ -180,6 +180,15 @@ export default {
           <p class="text-gray-700 leading-relaxed mb-4">Sugar, jaggery and honey all give sweetness — neither is a fat-loss solution nor a weight gain villain alone. The key is moderation and smart usage. If you're trying to lose fat, choose jaggery or honey occasionally, reduce overall sugar intake, and prioritize whole foods.</p>
           <p class="font-bold text-amber-700">Fitness is not about removing sweetness — it's about balancing it. Have your sweetness — just control the teaspoon, not your happiness.</p>
         </section>
+      
+        <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-6 my-8">
+          <p class="font-bold text-gray-900 mb-4 text-lg">📖 You Might Also Like:</p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/reduce-sugar-cravings-naturally" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">How to Reduce Sugar Cravings Naturally</a></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/how-to-read-nutrition-labels-india" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">How to Read Nutrition Labels on Indian Packaged Foods</a></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/healthy-snacks-office-evening-cravings" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">Healthy Indian Snacks for Office & Evening Cravings</a></li>
+          </ul>
+        </div>
       </div>
     `,
     image: "/images/blog_13.webp",

@@ -337,6 +337,15 @@ export default {
             Gentle consistency today creates powerful results tomorrow.
           </p>
         </section>
+      
+        <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-6 my-8">
+          <p class="font-bold text-gray-900 mb-4 text-lg">📖 You Might Also Like:</p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/thyroid-weight-management-guide" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">Thyroid & Weight Management: A Complete Guide</a></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/stress-weight-gain-connection" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">The Stress-Weight Gain Connection Explained</a></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/intermittent-fasting-beginners-india" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">Intermittent Fasting for Beginners: An Indian Guide</a></li>
+          </ul>
+        </div>
       </div>
   `,
   image: "/images/blog_32.webp",

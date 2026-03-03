@@ -250,6 +250,15 @@ export default {
             You don't need perfection. You need consistent improvement — one workout at a time.
           </p>
         </section>
+      
+        <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-6 my-8">
+          <p class="font-bold text-gray-900 mb-4 text-lg">📖 You Might Also Like:</p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/7-day-beginner-home-workout-plan" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">7-Day Beginner Home Workout Plan</a></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/sleep-recovery-fat-loss-guide" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">Sleep & Recovery: The Missing Key to Fat Loss</a></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/fat-loss-mistakes-fix" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">Fat Loss Mistakes You're Probably Making Right Now</a></li>
+          </ul>
+        </div>
       </div>
     `,
     image: "/images/blog_5.webp",

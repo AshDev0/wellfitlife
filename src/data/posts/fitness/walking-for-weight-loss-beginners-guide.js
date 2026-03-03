@@ -347,6 +347,15 @@ export default {
             Start with 15 minutes today. That's it. Just 15 minutes. Tomorrow, do it again. And the day after. Before you know it, walking will be the best habit you ever built.
           </p>
         </section>
+      
+        <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-6 my-8">
+          <p class="font-bold text-gray-900 mb-4 text-lg">📖 You Might Also Like:</p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/calorie-deficit-explained-weight-loss" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">Calorie Deficit Explained: The Only Rule That Matters</a></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/fat-loss-mistakes-fix" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">Fat Loss Mistakes You're Probably Making Right Now</a></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/morning-habits-fat-loss-naturally" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">7 Morning Habits That Help You Lose Fat Naturally</a></li>
+          </ul>
+        </div>
       </div>
   `,
   image: "/images/blog_33.webp",

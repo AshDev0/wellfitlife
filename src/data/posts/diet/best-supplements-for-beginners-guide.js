@@ -258,6 +258,15 @@ export default {
           </p>
           <p class="font-bold text-blue-700 text-lg">Focus on long-term fitness, not temporary shortcuts. Strong body takes time — build it smartly.</p>
         </section>
+      
+        <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-6 my-8">
+          <p class="font-bold text-gray-900 mb-4 text-lg">📖 You Might Also Like:</p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/protein-rich-vegetarian-foods-india" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">Best Vegetarian Protein Foods in India</a></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/post-workout-meal-guide-indian" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">Post-Workout Meal Guide for Indians</a></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/7-day-beginner-home-workout-plan" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">7-Day Beginner Home Workout Plan</a></li>
+          </ul>
+        </div>
       </div>
     `,
     image: "/images/blog_18.webp",

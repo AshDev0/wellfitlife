@@ -253,6 +253,15 @@ export default {
             You are stronger than cravings — give your body nutrition, not just sugar.
           </p>
         </section>
+      
+        <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-6 my-8">
+          <p class="font-bold text-gray-900 mb-4 text-lg">📖 You Might Also Like:</p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/sugar-vs-jaggery-vs-honey-comparison" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">Sugar vs Jaggery vs Honey: Which Is Healthier?</a></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/mindful-eating-portion-control" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">Mindful Eating and Portion Control Guide</a></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/how-to-read-nutrition-labels-india" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">How to Read Nutrition Labels on Indian Packaged Foods</a></li>
+          </ul>
+        </div>
       </div>
   `,
   image: "/images/blog_29.webp",

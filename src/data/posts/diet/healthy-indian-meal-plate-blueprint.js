@@ -218,6 +218,15 @@ export default {
             Your plate is your everyday medicine. Nourish it, and it will transform you.
           </p>
         </section>
+      
+        <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-6 my-8">
+          <p class="font-bold text-gray-900 mb-4 text-lg">📖 You Might Also Like:</p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/indian-weekly-meal-prep-guide-healthy-eating" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">Indian Weekly Meal Prep Guide for Healthy Eating</a></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/how-to-read-nutrition-labels-india" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">How to Read Nutrition Labels on Indian Packaged Foods</a></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/protein-rich-vegetarian-foods-india" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">Best Vegetarian Protein Foods in India</a></li>
+          </ul>
+        </div>
       </div>
   `,
   image: "/images/blog_26.webp",

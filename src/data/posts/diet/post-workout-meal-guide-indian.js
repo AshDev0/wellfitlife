@@ -260,7 +260,16 @@ export default {
           Now go fuel those gains! 💪
         </p>
       </div>
-    </div>
+    
+        <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-6 my-8">
+          <p class="font-bold text-gray-900 mb-4 text-lg">📖 You Might Also Like:</p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/protein-rich-vegetarian-foods-india" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">Best Vegetarian Protein Foods in India</a></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/protein-breakfast-ideas-indian" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">High-Protein Indian Breakfast Ideas for Fat Loss</a></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/build-muscle-at-home-without-gym" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">How to Build Muscle at Home Without a Gym</a></li>
+          </ul>
+        </div>
+      </div>
   `,
   image: "/images/blog_22.webp",
   author: {

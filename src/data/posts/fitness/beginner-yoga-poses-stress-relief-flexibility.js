@@ -328,6 +328,15 @@ export default {
           </p>
           <p class="font-bold text-purple-700 text-lg">Give yourself time. Your body is learning, healing, and evolving — one breath at a time.</p>
         </section>
+      
+        <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-6 my-8">
+          <p class="font-bold text-gray-900 mb-4 text-lg">📖 You Might Also Like:</p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/stress-weight-gain-connection" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">The Stress-Weight Gain Connection Explained</a></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/mindful-eating-portion-control" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">Mindful Eating and Portion Control Guide</a></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/office-workers-fitness-routine-posture-fix" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">Fitness for Office Workers: Fix Your Posture & Move More</a></li>
+          </ul>
+        </div>
       </div>
     `,
     image: "/images/blog_15.webp",

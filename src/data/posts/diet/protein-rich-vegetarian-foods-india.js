@@ -288,6 +288,15 @@ export default {
             Try including at least 4–5 items daily, rotate weekly, and track how you feel after 2–3 weeks. You'll notice improved energy, less hunger crashes, and better workout results.
           </p>
         </section>
+      
+        <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-6 my-8">
+          <p class="font-bold text-gray-900 mb-4 text-lg">📖 You Might Also Like:</p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/post-workout-meal-guide-indian" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">Post-Workout Meal Guide for Indians</a></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/protein-breakfast-ideas-indian" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">High-Protein Indian Breakfast Ideas for Fat Loss</a></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/healthy-indian-meal-plate-blueprint" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">The Healthy Indian Meal Plate Blueprint</a></li>
+          </ul>
+        </div>
       </div>
     `,
     image: "/images/blog_3.webp",

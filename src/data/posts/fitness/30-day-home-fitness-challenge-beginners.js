@@ -363,6 +363,15 @@ export default {
             Start Day 1 today — Your future self will thank you.
           </p>
         </section>
+      
+        <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-6 my-8">
+          <p class="font-bold text-gray-900 mb-4 text-lg">📖 You Might Also Like:</p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/7-day-beginner-home-workout-plan" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">7-Day Beginner Home Workout Plan</a></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/build-discipline-stay-consistent-fitness" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">How to Build Discipline and Stay Consistent in Fitness</a></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/weight-loss-motivation-psychology" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">The Psychology of Weight Loss Motivation</a></li>
+          </ul>
+        </div>
       </div>
     `,
     image: "/images/blog_7.webp",

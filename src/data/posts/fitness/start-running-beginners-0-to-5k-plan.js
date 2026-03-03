@@ -290,6 +290,15 @@ export default {
           <p class="text-gray-700 leading-relaxed mb-4">Running changes body, mind and lifestyle — once it becomes a habit. You don't need to run fast or long from Day 1. Start slow, breathe well, build stamina gradually and complete your first 5K proudly. This journey builds confidence more than fitness. Every run becomes a reminder of your growth.</p>
           <p class="font-bold text-green-700 text-lg">Put on your shoes. Step outside. Your Day 1 begins whenever you decide. The road is waiting. 🏃‍♂️💪</p>
         </section>
+      
+        <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-6 my-8">
+          <p class="font-bold text-gray-900 mb-4 text-lg">📖 You Might Also Like:</p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/walking-for-weight-loss-beginners-guide" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">Walking for Weight Loss: A Complete Beginner's Guide</a></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/7-day-beginner-home-workout-plan" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">7-Day Beginner Home Workout Plan</a></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/sleep-recovery-fat-loss-guide" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">Sleep & Recovery: The Missing Key to Fat Loss</a></li>
+          </ul>
+        </div>
       </div>
     `,
     image: "/images/blog_14.webp",

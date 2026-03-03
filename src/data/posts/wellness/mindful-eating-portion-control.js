@@ -203,7 +203,16 @@ export default {
           Start today. Your body (and mind) will thank you. 💚
         </p>
       </div>
-    </div>
+    
+        <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-6 my-8">
+          <p class="font-bold text-gray-900 mb-4 text-lg">📖 You Might Also Like:</p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/healthy-indian-meal-plate-blueprint" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">The Healthy Indian Meal Plate Blueprint</a></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/reduce-sugar-cravings-naturally" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">How to Reduce Sugar Cravings Naturally</a></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/gut-health-digestion-foods" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">Gut Health & Digestion: Best Foods to Eat Daily</a></li>
+          </ul>
+        </div>
+      </div>
   `,
   image: "/images/blog_21.webp",
   author: {

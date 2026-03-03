@@ -294,6 +294,15 @@ export default {
         </p>
         <p class="font-bold text-purple-700 text-lg">Strong, pain-free life begins with one stretch today.</p>
       </section>
+
+        <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-6 my-8">
+          <p class="font-bold text-gray-900 mb-4 text-lg">📖 You Might Also Like:</p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/beginner-yoga-poses-stress-relief-flexibility" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">Beginner Yoga Poses for Stress Relief and Flexibility</a></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/walking-for-weight-loss-beginners-guide" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">Walking for Weight Loss: A Complete Beginner's Guide</a></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/stress-weight-gain-connection" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">The Stress-Weight Gain Connection Explained</a></li>
+          </ul>
+        </div>
     </div>
   `,
   image: "/images/blog_20.webp",

@@ -434,6 +434,15 @@ export default {
           <p class="font-bold text-green-700 text-xl mb-2">Fitness begins in the kitchen — one prepared plate at a time.</p>
           <p class="text-gray-700 text-lg">Invest 2–3 hours on Sunday. Save 10+ hours during the week. Eat better. Feel better. Live better. 🥗💪</p>
         </section>
+      
+        <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-6 my-8">
+          <p class="font-bold text-gray-900 mb-4 text-lg">📖 You Might Also Like:</p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/healthy-indian-meal-plate-blueprint" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">The Healthy Indian Meal Plate Blueprint</a></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/healthy-dinner-ideas-fat-loss-indian" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">Healthy Indian Dinner Ideas for Fat Loss</a></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/how-to-read-nutrition-labels-india" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">How to Read Nutrition Labels on Indian Packaged Foods</a></li>
+          </ul>
+        </div>
       </div>
     `,
     image: "/images/blog_9.webp",

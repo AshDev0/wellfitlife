@@ -265,6 +265,15 @@ export default {
           </p>
           <p class="font-bold text-purple-700 text-lg">Eat light, sleep light — wake up lighter.</p>
         </section>
+      
+        <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-6 my-8">
+          <p class="font-bold text-gray-900 mb-4 text-lg">📖 You Might Also Like:</p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/healthy-indian-meal-plate-blueprint" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">The Healthy Indian Meal Plate Blueprint</a></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/indian-weekly-meal-prep-guide-healthy-eating" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">Indian Weekly Meal Prep Guide for Healthy Eating</a></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/calorie-deficit-explained-weight-loss" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">Calorie Deficit Explained: The Only Rule That Matters</a></li>
+          </ul>
+        </div>
       </div>
     `,
     image: "/images/blog_17.webp",

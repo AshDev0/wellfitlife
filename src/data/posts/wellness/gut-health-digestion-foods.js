@@ -325,7 +325,16 @@ export default {
           A happy gut = a healthy body. Start taking care of it today! 🌿💚
         </p>
       </div>
-    </div>
+    
+        <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-6 my-8">
+          <p class="font-bold text-gray-900 mb-4 text-lg">📖 You Might Also Like:</p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/mindful-eating-portion-control" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">Mindful Eating and Portion Control Guide</a></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/indian-weekly-meal-prep-guide-healthy-eating" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">Indian Weekly Meal Prep Guide for Healthy Eating</a></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold mt-0.5">→</span><a href="/blog/stress-weight-gain-connection" class="text-emerald-700 hover:text-emerald-900 hover:underline font-medium transition-colors">The Stress-Weight Gain Connection Explained</a></li>
+          </ul>
+        </div>
+      </div>
   `,
   image: "/images/blog_25.webp",
   author: {
