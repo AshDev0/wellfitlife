@@ -31,6 +31,13 @@
     <priority>0.6</priority>
   </url>
 
+  <url>
+    <loc>https://wellfitlife.in/privacy-policy</loc>
+    <lastmod>2026-03-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
   <!-- Blog Posts - Fitness Category -->
   <url>
     <loc>https://wellfitlife.in/blog/7-day-beginner-home-workout-plan</loc>

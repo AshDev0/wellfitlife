@@ -8,7 +8,7 @@
  * - Collects email and first name
  * - Integrates with Brevo API
  * - Local storage to prevent repeated popups
- * - Success/Error states
+ * - Success/Error states with Gmail promotions tip
  * - Mobile responsive
  */
 
@@ -21,6 +21,7 @@ export default function NewsletterPopup() {
   const [firstName, setFirstName] = useState('');
   const [status, setStatus] = useState('idle'); // idle, loading, success, error
   const [errorMessage, setErrorMessage] = useState('');
+  const [alreadySubscribed, setAlreadySubscribed] = useState(false);
 
   useEffect(() => {
     // Check if user has already seen popup
@@ -35,7 +36,7 @@ export default function NewsletterPopup() {
       // Show popup after 10 seconds
       const timer = setTimeout(() => {
         setIsVisible(true);
-      }, 10000); // 10 seconds
+      }, 10000);
 
       return () => clearTimeout(timer);
     }
@@ -51,57 +52,65 @@ export default function NewsletterPopup() {
     e.preventDefault();
     setStatus('loading');
     setErrorMessage('');
+    setAlreadySubscribed(false);
 
     try {
-      // Brevo API endpoint
       const response = await fetch('https://api.brevo.com/v3/contacts', {
         method: 'POST',
         headers: {
           'accept': 'application/json',
           'api-key': import.meta.env.VITE_BREVO_API_KEY,
-          'content-type': 'application/json'
+          'content-type': 'application/json',
         },
         body: JSON.stringify({
-          email: email,
+          email: email.trim().toLowerCase(),
           attributes: {
-            FIRSTNAME: firstName || 'Friend'
+            FIRSTNAME: firstName?.trim() || 'Friend',
           },
           listIds: [parseInt(import.meta.env.VITE_BREVO_LIST_ID)],
-          updateEnabled: true // Update if already exists
-        })
+          updateEnabled: true,
+        }),
       });
 
-      const data = await response.json();
+      // 204 = contact already exists in Brevo — no body returned
+      let data = {};
+      if (response.status !== 204) {
+        data = await response.json();
+      }
 
-      // Success cases: 201 (created) or 204 (already exists but updated)
-      if (response.ok || response.status === 204) {
+      // 201 = new contact successfully created
+      if (response.status === 201) {
         setStatus('success');
-
-        // Track with Google Analytics
         if (window.gtag) {
           window.gtag('event', 'newsletter_signup', {
             event_category: 'engagement',
-            event_label: 'popup'
+            event_label: 'popup',
           });
         }
+        setTimeout(() => handleClose(), 4000);
+        return;
+      }
 
-        // Close popup after 3 seconds
-        setTimeout(() => {
-          handleClose();
-        }, 3000);
-      }
-      // Handle "already exists" case
-      else if (response.status === 400 && data.message?.includes('already exists')) {
+      // 204 = contact exists in Brevo but added to this list
+      if (response.status === 204) {
+        setAlreadySubscribed(true);
         setStatus('success');
-        setErrorMessage('You are already subscribed!');
-        setTimeout(() => {
-          handleClose();
-        }, 3000);
+        setTimeout(() => handleClose(), 4000);
+        return;
       }
-      else {
-        setStatus('error');
-        setErrorMessage(data.message || 'Something went wrong. Please try again.');
+
+      // 400 = already exists in this exact list
+      if (response.status === 400 && data.message?.includes('already exist')) {
+        setAlreadySubscribed(true);
+        setStatus('success');
+        setTimeout(() => handleClose(), 4000);
+        return;
       }
+
+      // Any other error from Brevo
+      setStatus('error');
+      setErrorMessage(data.message || 'Something went wrong. Please try again.');
+
     } catch (error) {
       console.error('Newsletter subscription error:', error);
       setStatus('error');
@@ -114,6 +123,7 @@ export default function NewsletterPopup() {
   return (
     <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-[100] p-4 animate-fadeIn">
       <div className="bg-white rounded-2xl max-w-md w-full p-8 relative shadow-2xl animate-slideUp">
+
         {/* Close button */}
         <button
           onClick={handleClose}
@@ -123,17 +133,27 @@ export default function NewsletterPopup() {
           <X size={24} />
         </button>
 
-        {/* Content */}
+        {/* Success State */}
         {status === 'success' ? (
-          <div className="text-center py-8">
+          <div className="text-center py-6">
             <div className="text-6xl mb-4">🎉</div>
             <h3 className="text-2xl font-bold text-gray-900 mb-2">
-              {errorMessage || "You're In!"}
+              {alreadySubscribed ? 'Already Subscribed!' : "You're In!"}
             </h3>
-            <p className="text-gray-600">
-              {errorMessage ? 'Great to have you with us!' : 'Success! Check your inbox (and spam folder) for a welcome email.'}
+            <p className="text-gray-600 mb-4">
+              {alreadySubscribed
+                ? 'Great to have you with us! Keep an eye on your inbox.'
+                : 'Welcome to WellFitLife! Check your inbox for a welcome email from hello@wellfitlife.in'}
             </p>
+
+            {/* Gmail promotions tip — only show for new subscribers */}
+            {!alreadySubscribed && (
+              <p className="text-sm text-amber-700 bg-amber-50 border border-amber-200 rounded-lg p-3">
+                📌 Using Gmail? Check your <strong>Promotions</strong> tab — drag our email to <strong>Primary</strong> inbox to never miss updates!
+              </p>
+            )}
           </div>
+
         ) : (
           <>
             {/* Header */}
@@ -207,6 +227,7 @@ export default function NewsletterPopup() {
                   </>
                 )}
               </button>
+
               {status === 'error' && (
                 <p className="text-red-600 text-sm text-center">
                   {errorMessage}

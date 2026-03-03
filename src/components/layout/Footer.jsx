@@ -137,8 +137,13 @@ export default function Footer() {
       </div>
 
       {/* Bottom Copyright */}
-      <div className="mt-14 text-center text-gray-400 border-t border-white/10 pt-6">
-        © {new Date().getFullYear()} <span className="text-white">WellFitLife</span>. All Rights Reserved.
+      <div className="mt-14 text-center text-gray-400 border-t border-white/10 pt-6 space-y-3">
+        <div className="flex justify-center gap-6 text-sm">
+          <Link to="/privacy-policy" className="hover:text-emerald-400 transition">
+            Privacy Policy
+          </Link>
+        </div>
+        <p>© {new Date().getFullYear()} <span className="text-white">WellFitLife</span>. All Rights Reserved.</p>
       </div>
 
     </footer>
