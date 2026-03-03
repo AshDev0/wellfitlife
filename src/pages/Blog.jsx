@@ -23,21 +23,25 @@ import { getAllCategories } from "../data/posts";
 export default function Blog() {
   const [searchParams, setSearchParams] = useSearchParams();
   const tagFromUrl = searchParams.get("tag");
+  const searchFromUrl = searchParams.get("search");
 
   const [selectedCategory, setSelectedCategory] = useState("All");
-  const [searchQuery, setSearchQuery] = useState(tagFromUrl || "");
-  const [debouncedSearch, setDebouncedSearch] = useState(tagFromUrl || "");
+  const [searchQuery, setSearchQuery] = useState(tagFromUrl || searchFromUrl || "");
+  const [debouncedSearch, setDebouncedSearch] = useState(tagFromUrl || searchFromUrl || "");
   const [currentPage, setCurrentPage] = useState(1);
 
-  // Handle tag parameter from URL
+  // Handle tag and search parameters from URL
   useEffect(() => {
     if (tagFromUrl) {
       setSearchQuery(tagFromUrl);
       setDebouncedSearch(tagFromUrl);
-      // Clear the URL parameter after setting the search
+      setSearchParams({});
+    } else if (searchFromUrl) {
+      setSearchQuery(searchFromUrl);
+      setDebouncedSearch(searchFromUrl);
       setSearchParams({});
     }
-  }, [tagFromUrl, setSearchParams]);
+  }, [tagFromUrl, searchFromUrl, setSearchParams]);
 
   const POSTS_PER_PAGE = 9; // 3 rows × 3 columns grid
 
