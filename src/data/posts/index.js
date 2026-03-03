@@ -15,7 +15,7 @@
 // Import all posts from each category
 // Note: Update these imports when you add new post files
 
-// Fitness Posts (Posts 1, 5, 7, 11, 12, 14, 15, 19, 24, 30)
+// Fitness Posts (Posts 1, 5, 7, 11, 12, 14, 15, 19, 24, 30, 33, 38)
 import post1 from './fitness/7-day-beginner-home-workout-plan.js';
 import post5 from './fitness/common-home-workout-mistakes-beginners.js';
 import post7 from './fitness/30-day-home-fitness-challenge-beginners.js';
@@ -26,8 +26,10 @@ import post15 from './fitness/beginner-yoga-poses-stress-relief-flexibility.js';
 import post19 from './fitness/muscle-building-home.js';
 import post24 from './fitness/female-fitness-beginner-guide.js';
 import post30 from './fitness/fat-loss-mistakes-fix.js';
+import post33 from './fitness/walking-for-weight-loss-beginners-guide.js';
+import post38 from './fitness/fitness-after-40-beginners-guide.js';
 
-// Diet Posts (Posts 2, 3, 4, 6, 8, 9, 10, 13, 16, 17, 18, 22, 23, 26, 29)
+// Diet Posts (Posts 2, 3, 4, 6, 8, 9, 10, 13, 16, 17, 18, 22, 23, 26, 29, 34, 35, 37, 39)
 import post2 from './diet/quick-healthy-indian-breakfast-ideas.js';
 import post3 from './diet/protein-rich-vegetarian-foods-india.js';
 import post4 from './diet/healthy-snacks-office-evening-cravings.js';
@@ -43,8 +45,12 @@ import post22 from './diet/post-workout-meal-guide-indian.js';
 import post23 from './diet/protein-breakfast-ideas-indian.js';
 import post26 from './diet/healthy-indian-meal-plate-blueprint.js';
 import post29 from './diet/reduce-sugar-cravings-naturally.js';
+import post34 from './diet/intermittent-fasting-beginners-india.js';
+import post35 from './diet/calorie-deficit-explained-weight-loss.js';
+import post37 from './diet/diabetes-friendly-indian-diet-guide.js';
+import post39 from './diet/how-to-read-nutrition-labels-india.js';
 
-// Wellness Posts (Posts 20, 21, 25, 27, 28, 31, 32)
+// Wellness Posts (Posts 20, 21, 25, 27, 28, 31, 32, 36, 40)
 import post20 from './wellness/office-workers-fitness.js';
 import post21 from './wellness/mindful-eating-portion-control.js';
 import post25 from './wellness/gut-health-digestion-foods.js';
@@ -52,10 +58,14 @@ import post27 from './wellness/weight-loss-motivation-psychology.js';
 import post28 from './wellness/daily-fat-loss-routine.js';
 import post31 from './wellness/morning-habits-fat-loss-naturally.js';
 import post32 from './wellness/pcos-weight-loss-guide.js';
+import post36 from './wellness/thyroid-weight-management-guide.js';
+import post40 from './wellness/stress-weight-gain-connection.js';
 
 // All posts array (sorted by ID in descending order - latest first)
 const blogPosts = [
-  post32, post31, post30, post29, post28, post27, post26,
+  post40, post39, post38,
+  post37, post36, post35, post34,
+  post33, post32, post31, post30, post29, post28, post27, post26,
   post25, post24, post23, post22, post21,
   post20, post19, post18, post17, post16,
   post15, post14, post13, post12, post11,
