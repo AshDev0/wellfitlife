@@ -9,6 +9,7 @@
 
 import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 const faqs = [
   {
@@ -52,8 +53,26 @@ export default function FAQ() {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
     <section className="py-20 lg:py-24 bg-gradient-to-br from-gray-50 via-white to-emerald-50 relative overflow-hidden">
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
+      </Helmet>
 
       {/* Decorative background blur */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-400/10 blur-[120px] pointer-events-none"></div>

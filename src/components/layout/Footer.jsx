@@ -142,6 +142,10 @@ export default function Footer() {
           <Link to="/privacy-policy" className="hover:text-emerald-400 transition">
             Privacy Policy
           </Link>
+          <span className="text-white/20">|</span>
+          <Link to="/terms-of-service" className="hover:text-emerald-400 transition">
+            Terms of Service
+          </Link>
         </div>
         <p>© {new Date().getFullYear()} <span className="text-white">WellFitLife</span>. All Rights Reserved.</p>
       </div>
